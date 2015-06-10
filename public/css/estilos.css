@@ -31,3 +31,11 @@ and open the template in the editor.
     font-family:arial, helvetica, sans-serif;
     line-height:5;
 }
+
+.tboton {
+    width: 120px !important;
+}
+
+.tboton1 {
+    width: 90px !important;
+}

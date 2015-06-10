@@ -23,7 +23,7 @@ class Campanias extends CI_Controller {
         
     }
 
-    public function lista_campanias() {
+    public function campanias_lista() {
 //        $datos_campanias = $this->campanias_model->listar_listar();
 //        $data['campanias'] = $datos_campanias;
 //        $this->load->view('administracion/catalogos/campanias_lista_view', $data);
@@ -31,15 +31,15 @@ class Campanias extends CI_Controller {
         $this->load->view('menus/pie_view');
     }
 
-    public function lista_campanias_inactivos() {
+    public function campanias_inactivas_lista() {
 //        $datos_campanias = $this->campania_model->listar_campanias_inactivos();
 //        $data['campanias'] = $datos_campanias;
 //        $this->load->view('administracion/catalogos/campanias_lista_inactivos_view', $data);
-        $this->load->view('administracion/catalogos/campanias_lista_inactivos_view');
+        $this->load->view('administracion/catalogos/campanias_inactivas_lista_view');
         $this->load->view('menus/pie_view');
     }
 
-    public function agregar_campania() {
+    public function campania_agregar() {
 
 //        $this->form_validation->set_rules('campania', 'Usuario', 'trim|required|xss_clean');
 
@@ -56,11 +56,11 @@ class Campanias extends CI_Controller {
 //            $this->load->view('administracion/catalogos/campania_agregar_view');
 //        }
         $this->load->view('administracion/catalogos/campania_agregar_view'); //se debe eliminar cuando se haga el acceso a datos
-        $this->load->view('menus/pie_view');
+        $this->load->view('menus/pie_fecha_view');
     }
 
 //    public function editar_campania($idcampania) {
-        public function editar_campania() {
+        public function campania_editar() {
 //        $this->form_validation->set_rules('campania', 'Cargo', 'trim|required|xss_clean');
 //
 //        $data['idcampania'] = $idcampania;
@@ -79,7 +79,36 @@ class Campanias extends CI_Controller {
 //            $this->load->view('administracion/catalogos/campania_editar_view', $data);
 //        }
         $this->load->view('administracion/catalogos/campania_editar_view'); //se debe eliminar cuando se haga el acceso a datos
+        $this->load->view('menus/pie_fecha_view');
+    }
+
+    public function campania_cerrar() {
+        $this->load->view('administracion/catalogos/campanias_lista_view'); //se debe eliminar cuando se haga el acceso a datos
         $this->load->view('menus/pie_view');
     }
 
+    public function campania_abrir() {
+        $this->load->view('administracion/catalogos/campanias_lista_view'); //se debe eliminar cuando se haga el acceso a datos
+        $this->load->view('menus/pie_view');
+    }
+    
+    public function campania_eliminar() {
+        $this->load->view('administracion/catalogos/campanias_lista_view'); //se debe eliminar cuando se haga el acceso a datos
+        $this->load->view('menus/pie_view');
+    }
+    
+    public function campania_asignar() {
+        $this->load->view('administracion/catalogos/campanias_lista_view'); //se debe eliminar cuando se haga el acceso a datos
+        $this->load->view('menus/pie_view');
+    }
+    
+    public function campania_reasignar() {
+        $this->load->view('administracion/catalogos/campanias_lista_view'); //se debe eliminar cuando se haga el acceso a datos
+        $this->load->view('menus/pie_view');
+    }
+    
+    public function campania_carga_contactos() {
+        $this->load->view('administracion/catalogos/campanias_lista_view'); //se debe eliminar cuando se haga el acceso a datos
+        $this->load->view('menus/pie_view');
+    }
 }

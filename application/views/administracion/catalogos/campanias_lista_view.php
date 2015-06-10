@@ -5,15 +5,9 @@
     <div class="row">
         <div class="span3 well">
             <div class="block-content collapse in">
-                <!--<div class="navbar navbar-inner block-header">-->
                     <div class="muted pull-left" align="center"></div>
-                    <div class="btn-group" role="group" aria-label="...">
-                        <button href="agregar_usuario" type="button" class="btn btn-info">Nueva Campaña</button>
-                        <button href="lista_cargos_inactivos" type="button" class="btn btn-primary">Listar Inactivas</button>
-                    </div>
-<!--                    <a href="agregar_cargo" class="btn btn-small btn-success">Nuevo Cargo</a>
-                    <a href="lista_cargos_inactivos" class="btn btn-small btn-success">Cargos Inactivos</a>-->
-                <!--</div>-->
+                        <a href="<?php echo base_url() ?>index.php/administracion/catalogos/campanias/campania_agregar" class="btn btn-info tboton"><span class="glyphicon glyphicon-plus"></span>&nbsp;Campaña</a>
+                        <a href="<?php echo base_url() ?>index.php/administracion/catalogos/campanias/campanias_inactivas_lista" class="btn btn-primary tboton"><span class="glyphicon glyphicon-list-alt"></span>&nbsp;Inactivas</a>
                 <table class="table table-striped">
                     <thead>
                     <th>No.</th>
@@ -22,7 +16,10 @@
                     <th>Fecha Inicio</th>
                     <th>Fecha Fin</th>
                     <th>Editar</th>
-                    <th>Inactivar</th>
+                    <th>Asignar</th>
+                    <th>Reasignar</th>
+                    <th>Carga Contactos</th>
+                    <th>Cerrar</th>                    
                     </thead>
                     <tbody>
                         <tr>
@@ -31,8 +28,11 @@
                             <td></td>
                             <td></td>
                             <td></td>
-                            <td><a href="usuario_editar_view.php"><span class="glyphicon glyphicon-edit"></span></a></td>
-                            <td><a href="usuarios_inactivar"><span class="glyphicon glyphicon-asterisk"></span></a></td>
+                            <td><a href="<?php echo base_url() ?>index.php/administracion/catalogos/campanias/campania_editar"><span class="glyphicon glyphicon-edit"></span></a></td>
+                            <td><a href="<?php echo base_url() ?>index.php/administracion/catalogos/campanias/campania_asignar"><span class="glyphicon glyphicon-edit"></span></a></td>
+                            <td><a href="<?php echo base_url() ?>index.php/administracion/catalogos/campanias/campania_reasignar"><span class="glyphicon glyphicon-edit"></span></a></td>
+                            <td><a href="<?php echo base_url() ?>index.php/administracion/catalogos/campanias/campania_carga_contactos"><span class="glyphicon glyphicon-edit"></span></a></td>
+                            <td><a href="<?php echo base_url() ?>index.php/administracion/catalogos/campanias/campania_cerrar"><span class="glyphicon glyphicon-thumbs-down"></span></a></td>
                         </tr>
                         <tr>
                             <td></td>
@@ -40,8 +40,11 @@
                             <td></td>
                             <td></td>
                             <td></td>
-                            <td><a href="usuario_editar_view.php"><span class="glyphicon glyphicon-edit"></span></a></td>
-                            <td><a href="usuarios_inactivar"><span class="glyphicon glyphicon-asterisk"></span></a></td>
+                            <td><a href="<?php echo base_url() ?>index.php/administracion/catalogos/campanias/campania_editar"><span class="glyphicon glyphicon-edit"></span></a></td>
+                            <td><a href="<?php echo base_url() ?>index.php/administracion/catalogos/campanias/campania_asignar"><span class="glyphicon glyphicon-edit"></span></a></td>
+                            <td><a href="<?php echo base_url() ?>index.php/administracion/catalogos/campanias/campania_reasignar"><span class="glyphicon glyphicon-edit"></span></a></td>
+                            <td><a href="<?php echo base_url() ?>index.php/administracion/catalogos/campanias/campania_carga_contactos"><span class="glyphicon glyphicon-edit"></span></a></td>
+                            <td><a href="<?php echo base_url() ?>index.php/administracion/catalogos/campanias/campania_cerrar"><span class="glyphicon glyphicon-thumbs-down"></span></a></td>
                         </tr>
                         <tr>
                             <td></td>
@@ -49,8 +52,11 @@
                             <td></td>
                             <td></td>
                             <td></td>
-                            <td><a href="usuario_editar_view.php"><span class="glyphicon glyphicon-edit"></span></a></td>
-                            <td><a href="usuarios_inactivar"><span class="glyphicon glyphicon-asterisk"></span></a></td>
+                            <td><a href="<?php echo base_url() ?>index.php/administracion/catalogos/campanias/campania_editar"><span class="glyphicon glyphicon-edit"></span></a></td>
+                            <td><a href="<?php echo base_url() ?>index.php/administracion/catalogos/campanias/campania_asignar"><span class="glyphicon glyphicon-edit"></span></a></td>
+                            <td><a href="<?php echo base_url() ?>index.php/administracion/catalogos/campanias/campania_reasignar"><span class="glyphicon glyphicon-edit"></span></a></td>
+                            <td><a href="<?php echo base_url() ?>index.php/administracion/catalogos/campanias/campania_carga_contactos"><span class="glyphicon glyphicon-edit"></span></a></td>
+                            <td><a href="<?php echo base_url() ?>index.php/administracion/catalogos/campanias/campania_cerrar"><span class="glyphicon glyphicon-thumbs-down"></span></a></td>
                         </tr>
                         <tr>
                             <td></td>
@@ -58,8 +64,11 @@
                             <td></td>
                             <td></td>
                             <td></td>
-                            <td><a href="usuario_editar_view.php"><span class="glyphicon glyphicon-edit"></span></a></td>
-                            <td><a href="usuarios_inactivar"><span class="glyphicon glyphicon-asterisk"></span></a></td>
+                            <td><a href="<?php echo base_url() ?>index.php/administracion/catalogos/campanias/campania_editar"><span class="glyphicon glyphicon-edit"></span></a></td>
+                            <td><a href="<?php echo base_url() ?>index.php/administracion/catalogos/campanias/campania_asignar"><span class="glyphicon glyphicon-edit"></span></a></td>
+                            <td><a href="<?php echo base_url() ?>index.php/administracion/catalogos/campanias/campania_reasignar"><span class="glyphicon glyphicon-edit"></span></a></td>
+                            <td><a href="<?php echo base_url() ?>index.php/administracion/catalogos/campanias/campania_carga_contactos"><span class="glyphicon glyphicon-edit"></span></a></td>
+                            <td><a href="<?php echo base_url() ?>index.php/administracion/catalogos/campanias/campania_cerrar"><span class="glyphicon glyphicon-thumbs-down"></span></a></td>
                         </tr>
                     </tbody>
                     <?php

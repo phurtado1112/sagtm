@@ -1,44 +1,45 @@
 <div class="container">
-    <h2><center><b>Lista de Países</b></center></h2>
+    <h2><center><b>Lista de Países Inactivos</b></center></h2>
 </div>
 <div class="container">
     <div class="row">
         <div class="span3 well">
             <div class="block-content collapse in">
                     <div class="muted pull-left" align="center"></div>
-                        <a href="<?php echo base_url() ?>index.php/administracion/catalogos/paises/pais_agregar" class="btn btn-primary tboton"><span class="glyphicon glyphicon-plus"></span>&nbsp;País</a>
-                        <a href="<?php echo base_url() ?>index.php/administracion/catalogos/paises/paises_inactivos_lista" class="btn btn-info tboton"><span class="glyphicon glyphicon-list-alt"></span>&nbsp;Inactivos</a>
+                    <div class="btn-group" role="group" aria-label="...">
+                        <a class="btn btn-info" href="<?php echo base_url() ?>index.php/administracion/catalogos/paises/paises_lista" >Regresar</a>
+                    </div>
                 <table class="table table-striped">
                     <thead>
                     <th>No.</th>
                     <th>País</th>
-                    <th>Editar</th>
-                    <th>Inactivar</th>
+                    <th>Eliminar</th>
+                    <th>Activar</th>
                     </thead>
                     <tbody>
                         <tr>
                             <td></td>
                             <td></td>
-                            <td><a href="<?php echo base_url() ?>index.php/administracion/catalogos/paises/pais_editar"><span class="glyphicon glyphicon-edit"></span></a></td>
-                            <td><a href="<?php echo base_url() ?>index.php/administracion/catalogos/paises/pais_inactivar"><span class="glyphicon glyphicon-thumbs-down"></span></a></td>
+                            <td><a href="<?php echo base_url() ?>index.php/administracion/catalogos/paises/pais_eliminar"><span class="glyphicon glyphicon-remove"></span></a></td>
+                            <td><a href="<?php echo base_url() ?>index.php/administracion/catalogos/paises/pais_activar"><span class="glyphicon glyphicon-thumbs-up"></span></a></td>
                         </tr>
                         <tr>
                             <td></td>
                             <td></td>
-                            <td><a href="<?php echo base_url() ?>index.php/administracion/catalogos/paises/pais_editar"><span class="glyphicon glyphicon-edit"></span></a></td>
-                            <td><a href="<?php echo base_url() ?>index.php/administracion/catalogos/paises/pais_inactivar"><span class="glyphicon glyphicon-thumbs-down"></span></a></td>
+                            <td><a href="<?php echo base_url() ?>index.php/administracion/catalogos/paises/pais_eliminar"><span class="glyphicon glyphicon-remove"></span></a></td>
+                            <td><a href="<?php echo base_url() ?>index.php/administracion/catalogos/paises/pais_activar"><span class="glyphicon glyphicon-thumbs-up"></span></a></td>
                         </tr>
                         <tr>
                             <td></td>
                             <td></td>
-                            <td><a href="<?php echo base_url() ?>index.php/administracion/catalogos/paises/pais_editar"><span class="glyphicon glyphicon-edit"></span></a></td>
-                            <td><a href="<?php echo base_url() ?>index.php/administracion/catalogos/paises/pais_inactivar"><span class="glyphicon glyphicon-thumbs-down"></span></a></td>
+                            <td><a href="<?php echo base_url() ?>index.php/administracion/catalogos/paises/pais_eliminar"><span class="glyphicon glyphicon-remove"></span></a></td>
+                            <td><a href="<?php echo base_url() ?>index.php/administracion/catalogos/paises/pais_activar"><span class="glyphicon glyphicon-thumbs-up"></span></a></td>
                         </tr>
                         <tr>
                             <td></td>
                             <td></td>
-                            <td><a href="<?php echo base_url() ?>index.php/administracion/catalogos/paises/pais_editar"><span class="glyphicon glyphicon-edit"></span></a></td>
-                            <td><a href="<?php echo base_url() ?>index.php/administracion/catalogos/paises/pais_inactivar"><span class="glyphicon glyphicon-thumbs-down"></span></a></td>
+                            <td><a href="<?php echo base_url() ?>index.php/administracion/catalogos/paises/pais_eliminar"><span class="glyphicon glyphicon-remove"></span></a></td>
+                            <td><a href="<?php echo base_url() ?>index.php/administracion/catalogos/paises/pais_activar"><span class="glyphicon glyphicon-thumbs-up"></span></a></td>
                         </tr>
                     </tbody>
                     <?php

@@ -23,7 +23,7 @@ class Paises extends CI_Controller {
         
     }
 
-    public function lista_paises() {
+    public function paises_lista() {
 //        $datos_paises = $this->paises_model->listar_listar();
 //        $data['paises'] = $datos_paises;
 //        $this->load->view('administracion/catalogos/paises_lista_view', $data);
@@ -31,15 +31,15 @@ class Paises extends CI_Controller {
         $this->load->view('menus/pie_view');
     }
 
-    public function lista_paises_inactivos() {
+    public function paises_inactivos_lista() {
 //        $datos_paises = $this->pais_model->listar_paises_inactivos();
 //        $data['paises'] = $datos_paises;
 //        $this->load->view('administracion/catalogos/paises_lista_inactivos_view', $data);
-        $this->load->view('administracion/catalogos/paises_lista_inactivos_view');
+        $this->load->view('administracion/catalogos/paises_inactivos_lista_view');
         $this->load->view('menus/pie_view');
     }
 
-    public function agregar_pais() {
+    public function pais_agregar() {
 
 //        $this->form_validation->set_rules('pais', 'Usuario', 'trim|required|xss_clean');
 
@@ -60,7 +60,7 @@ class Paises extends CI_Controller {
     }
 
 //    public function editar_pais($idpais) {
-        public function editar_pais() {
+        public function pais_editar() {
 //        $this->form_validation->set_rules('pais', 'Cargo', 'trim|required|xss_clean');
 //
 //        $data['idpais'] = $idpais;
@@ -81,5 +81,19 @@ class Paises extends CI_Controller {
         $this->load->view('administracion/catalogos/pais_editar_view'); //se debe eliminar cuando se haga el acceso a datos
         $this->load->view('menus/pie_view');
     }
+    
+    public function pais_inactivar() {
+        $this->load->view('administracion/catalogos/paises_lista_view'); //se debe eliminar cuando se haga el acceso a datos
+        $this->load->view('menus/pie_view');
+    }
 
+    public function pais_activar() {
+        $this->load->view('administracion/catalogos/paises_lista_view'); //se debe eliminar cuando se haga el acceso a datos
+        $this->load->view('menus/pie_view');
+    }
+    
+    public function pais_eliminar() {
+        $this->load->view('administracion/catalogos/paises_lista_view'); //se debe eliminar cuando se haga el acceso a datos
+        $this->load->view('menus/pie_view');
+    }
 }
